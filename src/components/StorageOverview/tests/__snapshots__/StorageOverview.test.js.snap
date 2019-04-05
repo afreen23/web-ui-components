@@ -46,9 +46,7 @@ exports[`<StorageOverview /> renders correctly with Provider 1`] = `
                   <dd
                     class="kubevirt-detail__item-value"
                   >
-                    <span>
-                      rook-ceph
-                    </span>
+                    ---
                   </dd>
                   <dt
                     class="kubevirt-detail__item-title"
@@ -134,33 +132,6 @@ exports[`<StorageOverview /> renders correctly with Provider 1`] = `
                 </div>
                 <div
                   class="kubevirt-inventory__row"
-                  id="inventory-pods"
-                >
-                  <div
-                    class="kubevirt-inventory__row-title"
-                  >
-                    1 Pods
-                  </div>
-                  <div
-                    class="kubevirt-inventory__row-status"
-                  >
-                    <div
-                      class="kubevirt-inventory__row-status-item"
-                    >
-                      <span
-                        aria-hidden="true"
-                        class="fa fa-check-circle fa-2x kubevirt-inventory__row-status-item-icon--ok"
-                      />
-                      <span
-                        class="kubevirt-inventory__row-status-item-text"
-                      >
-                        1
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="kubevirt-inventory__row"
                   id="inventory-pvs"
                 >
                   <div
@@ -209,33 +180,6 @@ exports[`<StorageOverview /> renders correctly with Provider 1`] = `
                         class="kubevirt-inventory__row-status-item-text"
                       >
                         5
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="kubevirt-inventory__row"
-                  id="inventory-vms"
-                >
-                  <div
-                    class="kubevirt-inventory__row-title"
-                  >
-                    2 VMs
-                  </div>
-                  <div
-                    class="kubevirt-inventory__row-status"
-                  >
-                    <div
-                      class="kubevirt-inventory__row-status-item"
-                    >
-                      <span
-                        aria-hidden="true"
-                        class="fa fa-check-circle fa-2x kubevirt-inventory__row-status-item-icon--ok"
-                      />
-                      <span
-                        class="kubevirt-inventory__row-status-item-text"
-                      >
-                        2
                       </span>
                     </div>
                   </div>

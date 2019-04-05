@@ -1,5 +1,5 @@
 import { Inventory } from '../Inventory';
-import { nodes, pvcs, pvs, pods, vms, vmis, migrations } from '../../fixtures/StorageOverview.fixture';
+import { nodes, pvcs, pvs } from '../../fixtures/StorageOverview.fixture';
 
 export default [
   {
@@ -8,10 +8,6 @@ export default [
       nodes,
       pvcs,
       pvs,
-      pods,
-      vms,
-      vmis,
-      migrations,
     },
   },
   {

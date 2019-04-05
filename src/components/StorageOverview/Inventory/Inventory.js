@@ -9,37 +9,27 @@ import {
   DashboardCardTitleHelp,
 } from '../../Dashboard/DashboardCard';
 import { StorageOverviewContext } from '../StorageOverviewContext';
-import { mapNodesToProps, mapPodsToProps, mapPvcsToProps, mapPvsToProps, mapVmsToProps } from './utils';
+import { mapNodesToProps, mapPvcsToProps, mapPvsToProps } from './utils';
 import { InventoryRow } from '../../Dashboard/Inventory/InventoryRow';
 
-const InventoryBody = ({ nodes, pods, vms, vmis, pvs, pvcs, migrations }) => (
+const InventoryBody = ({ nodes, pvs, pvcs }) => (
   <React.Fragment>
     <InventoryRow title="Nodes" {...mapNodesToProps(nodes)} />
-    <InventoryRow title="Pods" {...mapPodsToProps(pods)} />
     <InventoryRow title="PVs" {...mapPvsToProps(pvs)} />
     <InventoryRow title="PVCs" {...mapPvcsToProps(pvcs)} />
-    <InventoryRow title="VMs" {...mapVmsToProps(vms, pods, migrations)} />
   </React.Fragment>
 );
 
 InventoryBody.defaultProps = {
   nodes: undefined,
-  pods: undefined,
-  vms: undefined,
-  vmis: undefined,
   pvs: undefined,
   pvcs: undefined,
-  migrations: undefined,
 };
 
 InventoryBody.propTypes = {
   nodes: PropTypes.array,
-  pods: PropTypes.array,
-  vms: PropTypes.array,
-  vmis: PropTypes.array,
   pvs: PropTypes.array,
   pvcs: PropTypes.array,
-  migrations: PropTypes.array,
 };
 
 export const Inventory = props => (
