@@ -46,9 +46,7 @@ exports[`<StorageOverview /> renders correctly with Provider 1`] = `
                   <dd
                     class="kubevirt-detail__item-value"
                   >
-                    <span>
-                      rook-ceph
-                    </span>
+                    ---
                   </dd>
                   <dt
                     class="kubevirt-detail__item-title"

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DataResiliency /> renders correctly 1`] = `
+<div
+  class="card-pf kubevirt-dashboard__card"
+>
+  <div
+    class="card-pf-heading kubevirt-dashboard__card-heading"
+  >
+    <h2
+      class="card-pf-title"
+    >
+      Data Resiliency
+    </h2>
+  </div>
+  <div
+    class="card-pf-body kubevirt-data-resiliency__body"
+  >
+    <div
+      class="kubevirt-data-resiliency__title"
+    >
+      Your Data Is Resilient
+    </div>
+    <div
+      class="kubevirt-data-resiliency__icon--ok"
+    >
+      <span
+        aria-hidden="true"
+        class="fa fa-check-circle fa-3x"
+      />
+    </div>
+  </div>
+</div>
+`;

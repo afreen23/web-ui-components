@@ -14,6 +14,8 @@ import { cloudInitTestVm } from '../../../tests/mocks/vm/cloudInitTestVm.mock';
 import { cloudInitTestVmi } from '../../../tests/mocks/vmi/cloudInitTestVmi.mock';
 import { fullVm } from '../../../tests/mocks/vm/vm.mock';
 
+import { dataResiliencyData } from '../DataResiliency/fixtures/DataResiliency.fixture';
+
 export const nodes = [localhostNode];
 export const pvcs = persistentVolumeClaims;
 export const pods = [cloudInitTestPod];
@@ -41,6 +43,7 @@ export default [
       vms,
       vmis,
       migrations,
+      ...dataResiliencyData,
     },
   },
 ];
