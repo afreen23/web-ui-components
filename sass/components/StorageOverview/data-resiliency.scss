@@ -1,9 +1,16 @@
+.kubevirt-data-resiliency__utilization-bar {
+  text-align: left;
+  margin-bottom: 3em !important;
+  height: 11px;
+}
+
 .kubevirt-data-resiliency__title {
-  margin-bottom: 1.2em;
+  margin-bottom: 4em;
 }
   
-.kubevirt-data-resiliency__body {
+.kubevirt-data-resiliency__dashboard-body {
   text-align: center;
+  padding: 0.7em;
 }
   
 .kubevirt-data-resiliency__icon--ok {
@@ -12,6 +19,3 @@
   line-height: 1.333em;
 }
 
-.kubevirt-data-resiliency__dashboard__body {
-  height: 16em;
-}

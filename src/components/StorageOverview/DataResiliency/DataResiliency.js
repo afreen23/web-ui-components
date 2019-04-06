@@ -27,37 +27,53 @@ const DataResiliencyBuildBody = ({ progressPercentage }) => (
       now={progressPercentage}
       description="Rebuilding in Progress"
       descriptionPlacementTop
+      className="kubevirt-data-resiliency__utilization-bar"
       label={`${progressPercentage}%`}
     />
   </React.Fragment>
 );
 
-export const DataResiliency = ({ componentLoaded, progressPercentage }) => (
-  <DashboardCard className="kubevirt-data-resiliency__dashboard__body">
-    <DashboardCardHeader>
-      <DashboardCardTitle>Data Resiliency</DashboardCardTitle>
-    </DashboardCardHeader>
-    <DashboardCardBody
-      className="kubevirt-data-resiliency__body"
-      isLoading={!componentLoaded}
-      LoadingComponent={InlineLoading}
-    >
-      {progressPercentage === 100 ? (
-        <DataResiliencyStatusBody />
-      ) : (
-        <DataResiliencyBuildBody progressPercentage={progressPercentage} />
-      )}
-    </DashboardCardBody>
-  </DashboardCard>
-);
+export const DataResiliency = ({ responseData, componentLoaded }) => {
+  const isResilient = {};
+  //extraction
+  const result = responseData.data.result;
+  const progressPercentage = Number(result[0].value[1]);//negative values ??
+  //validation
+  const isValid = isNaN(progressPercentage) ? false : true;
+  if (isValid) {
+    //TODO: rounding off
+    return (
+      <DashboardCard>
+        <DashboardCardHeader>
+          <DashboardCardTitle>Data Resiliency</DashboardCardTitle>
+        </DashboardCardHeader>
+        <DashboardCardBody
+          className="kubevirt-data-resiliency__dashboard-body"
+          isLoading={!componentLoaded}
+          LoadingComponent={InlineLoading}
+        >
+          {progressPercentage === 100 ? (
+            <DataResiliencyStatusBody />
+          ) : (
+            <DataResiliencyBuildBody progressPercentage={progressPercentage} />
+          )}
+        </DashboardCardBody>
+      </DashboardCard>
+    );
+  } else {
+    //TODO: error message ::something went wrong
+  }
+};
+
+// }
 
 DataResiliency.defaultProps = {
-  componentLoaded: true,
+  responseData: {},
 };
 
 DataResiliency.propTypes = {
+  responseData: PropTypes.object.isRequired,
   componentLoaded: PropTypes.bool,
-  progressPercentage: PropTypes.number.isRequired,
 };
 
 DataResiliencyBuildBody.propTypes = {

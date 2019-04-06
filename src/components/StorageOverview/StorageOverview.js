@@ -20,9 +20,6 @@ const MainCards = () => (
       <GridItem span={6}>
         <DataResiliencyConnected />
       </GridItem>
-      <GridItem span={6}>
-        <DataResiliencyConnected />
-      </GridItem>
     </Grid>
   </GridItem>
 );
