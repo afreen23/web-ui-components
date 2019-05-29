@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StorageOverview /> shallow-renders correctly 1`] = `
+<Dashboard>
+  <DashboardBody
+    className={null}
+  >
+    <Grid
+      className=""
+      gutter={null}
+      lg={null}
+      md={null}
+      sm={null}
+      span={null}
+      xl={null}
+    >
+      <MediaQuery
+        key="main-medium"
+        maxWidth={991.9}
+        values={Object {}}
+      >
+        <MainCards />
+      </MediaQuery>
+      <LeftCards />
+      <MediaQuery
+        key="main-large"
+        minWidth={992}
+        values={Object {}}
+      >
+        <MainCards />
+      </MediaQuery>
+      <RightCards />
+    </Grid>
+  </DashboardBody>
+</Dashboard>
+`;

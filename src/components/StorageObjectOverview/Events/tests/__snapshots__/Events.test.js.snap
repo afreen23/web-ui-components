@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Events /> renders correctly 1`] = `
+<DashboardCard
+  className={null}
+>
+  <DashboardCardHeader
+    className="kubevirt-events__card-header"
+  >
+    <DashboardCardTitle
+      className={null}
+    >
+      Events
+    </DashboardCardTitle>
+    <DashboardCardTitleHelp>
+      help for events
+    </DashboardCardTitleHelp>
+  </DashboardCardHeader>
+  <DashboardCardBody
+    LoadingComponent={[Function]}
+    className="kubevirt-events__card-body"
+    id="events-body"
+    isLoading={false}
+  >
+    <EventsBody>
+      <Component />
+    </EventsBody>
+  </DashboardCardBody>
+</DashboardCard>
+`;
