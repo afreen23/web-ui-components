@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StorageDetails /> renders Loading storage details correctly 1`] = `
+<DashboardCard
+  className={null}
+>
+  <DashboardCardHeader
+    className={null}
+  >
+    <DashboardCardTitle
+      className={null}
+    >
+      OCS Details
+    </DashboardCardTitle>
+  </DashboardCardHeader>
+  <DashboardCardBody
+    LoadingComponent={[Function]}
+    isLoading={false}
+  >
+    <DetailsBody>
+      <DetailItem
+        LoadingComponent={[Function]}
+        isLoading={true}
+        key="name"
+        title="Name"
+        value={null}
+      />
+      <DetailItem
+        LoadingComponent={[Function]}
+        isLoading={false}
+        key="provider"
+        title="Provider"
+        value="Bare Metal"
+      />
+    </DetailsBody>
+  </DashboardCardBody>
+</DashboardCard>
+`;
+
+exports[`<StorageDetails /> renders correctly with Provider 1`] = `
+<div
+  class="card-pf kubevirt-dashboard__card"
+>
+  <div
+    class="card-pf-heading kubevirt-dashboard__card-heading"
+  >
+    <h2
+      class="card-pf-title kubevirt-dashboard__card-title"
+    >
+      OCS Details
+    </h2>
+  </div>
+  <div
+    class="card-pf-body"
+  >
+    <dl
+      class="kubevirt-detail__list"
+    >
+      <dt
+        class="kubevirt-detail__item-title"
+      >
+        Name
+      </dt>
+      <dd
+        class="kubevirt-detail__item-value"
+      >
+        <span>
+          rook-ceph
+        </span>
+      </dd>
+      <dt
+        class="kubevirt-detail__item-title"
+      >
+        Provider
+      </dt>
+      <dd
+        class="kubevirt-detail__item-value"
+      >
+        <span>
+          Bare Metal
+        </span>
+      </dd>
+    </dl>
+  </div>
+</div>
+`;
+
+exports[`<StorageDetails /> renders undefined correctly 1`] = `
+<DashboardCard
+  className={null}
+>
+  <DashboardCardHeader
+    className={null}
+  >
+    <DashboardCardTitle
+      className={null}
+    >
+      OCS Details
+    </DashboardCardTitle>
+  </DashboardCardHeader>
+  <DashboardCardBody
+    LoadingComponent={[Function]}
+    isLoading={false}
+  >
+    <DetailsBody>
+      <DetailItem
+        LoadingComponent={[Function]}
+        isLoading={false}
+        key="name"
+        title="Name"
+        value="rook-ceph"
+      />
+      <DetailItem
+        LoadingComponent={[Function]}
+        isLoading={false}
+        key="provider"
+        title="Provider"
+        value="Bare Metal"
+      />
+    </DetailsBody>
+  </DashboardCardBody>
+</DashboardCard>
+`;

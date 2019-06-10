@@ -20,7 +20,7 @@ module.exports = {
 
   // dev server settings
   watchDirs: [paths.src],
-  port: 9000,
+  port: 9002,
 
   // directory where cosmos-export tool generates the static application
   outputPath: paths.cosmosExport,
